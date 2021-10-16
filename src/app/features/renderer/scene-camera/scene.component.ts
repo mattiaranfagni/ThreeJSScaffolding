@@ -7,7 +7,7 @@ import * as THREE from 'three';
 })
 export class SceneCameraComponent implements OnInit {
   @Input() renderer : any;
-  camera : any;
+  camera : THREE.Camera;
   scene : THREE.Scene;
 
   constructor() {
@@ -26,7 +26,7 @@ export class SceneCameraComponent implements OnInit {
   onWindowResize() {
     console.log("camera: changed aspect");
 
-    this.camera.aspect = window.innerWidth / window.innerHeight;
+    (this.camera as any).aspect = window.innerWidth / window.innerHeight;
   }
 
 }
