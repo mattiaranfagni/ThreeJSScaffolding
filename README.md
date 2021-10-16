@@ -1,6 +1,10 @@
 # ThreeJSScaffolding
+This project is to try setting up an Angular app well organized to use ThreeJS library.
+Next up: ngRX store implementation to track all objects in the scene.
 
+# AngularProject
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+
 
 ## Development server
 
